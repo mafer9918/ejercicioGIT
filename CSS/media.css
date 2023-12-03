@@ -1,0 +1,136 @@
+@media(max-width: 540px) {
+    .buscador {
+        margin-top: 8%;
+    }
+
+    .home_section_info {
+        margin-bottom: 20%;
+    }
+}
+
+@media(max-width: 700px) {
+    .buscador {
+        grid-template-columns: 1fr;
+    }
+
+    .buscador input[type="search"] {
+        grid-column: auto;
+    }
+
+    .contact {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "box1 box1"
+            "box2 box3"
+            "box4 box4";
+        row-gap: 35px;
+        text-align: left;
+    }
+    .box4{
+        text-align: left;
+    }
+}
+
+@media (max-width: 724px) {
+    .suscribe_news {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        padding: 45px 20px;
+        transform: translate(0, -20%);
+    }
+
+    .news-form {
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 850px) {
+    footer {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 896px) {
+    .firstSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: auto;
+        row-gap: 5px;
+        overflow: hidden;
+        padding: 0px 20px;
+    }
+
+    .secondSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: auto;
+        row-gap: 5px;
+        overflow: hidden;
+        padding: 0px 20px;
+    }
+
+    .gallery_image {
+        grid-row: 2/3;
+        direction: ltr;
+    }
+
+    .gallery_image2 {
+        grid-row: 2/3;
+    }
+
+    .galleryContenido {
+        grid-row: 1/2;
+        text-align: left;
+    }
+
+    .galleryContenido2 {
+        grid-row: 1/2;
+        text-align: left;
+    }
+
+    #pagination {
+        display: none;
+    }
+
+    .pagination_hide {
+        color: #DF991B;
+        font-size: 20px;
+        text-decoration: none;
+        visibility: visible;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    .pagination_hide span{
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 1010px) {
+    .navbar_logo {
+        content: url('../img/logoMobile.svg');
+    }
+
+    .nav_links a:not(:last-child) {
+        visibility: hidden;
+    }
+
+    .nav_links a:last-child {
+        border-left: none !important;
+        visibility: visible;
+    }
+}
+
+@media(max-width: 1120px) {
+    .nav_links a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1066px) {
+    .social-network {
+        visibility: hidden;
+    }
+}
