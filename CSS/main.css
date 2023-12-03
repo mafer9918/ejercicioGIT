@@ -319,8 +319,8 @@ html {
     font-family: 'Playfair Display', serif;
 }
 
-.galleryContenido2 .gallery-text,
-#contentParrafoGallery {
+.galleryContenido2 .gallery-text, 
+.galleryContenido2 #contentParrafoGallery {
     margin-left: 10%;
 }
 
@@ -385,20 +385,33 @@ html {
 .thirdSection {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 20px;
-    margin: 0 3% 0 5%;
+    grid-template-rows: auto 1fr;
     overflow: hidden;
+    justify-items: center;
+    text-align: center;
 }
 
-.primeraFila {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.informacion{
+    padding: 30px 0 30px 0;
 }
 
-.segundaFila {
+.informacion span{
+    font-family: 'Playfair Display', serif;
+    color: #DF991B;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.informacion h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    line-height: 40px;
+}
+
+.galleryThirdSection{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
 .imgGal2 {
@@ -423,7 +436,32 @@ html {
     transition: transform 0.3s ease;
 }
 
+.fourthSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 7%;
+    padding: 0px 70px;
+}
 
+.fourthSection #pagination{
+    margin-bottom: 10%;
+}
+
+.gallery_art{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.logo_mobile{
+    width: 100%;
+    height: 113px;
+}
+.fourthSection #contentParrafoGallery {
+    margin-left: 5%;
+}
 /*END GALLERY*/
 
 /*START FOOTER*/
@@ -535,6 +573,10 @@ footer {
     margin-bottom: 20px;
 }
 
+.box3 a:first-child {
+    font-weight: 700;
+}
+
 .box4 span:first-child {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
@@ -560,6 +602,7 @@ footer {
     font-size: 19px;
     color: #ffffff;
     text-decoration: none;
+    font-weight: 200;
 }
 
 .division_line {
